@@ -2,7 +2,7 @@ development:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: database_test
+  database: DATABASE_TEST
   pool: 5
   username: admin
   password: goose666
