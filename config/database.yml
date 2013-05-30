@@ -12,7 +12,7 @@ test:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: DATABASE_TEST
+  database: database_test
   pool: 5
   username: ad
   password: goose666
