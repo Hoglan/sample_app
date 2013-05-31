@@ -19,6 +19,7 @@ describe User do
 
   it { should respond_to(:name) }
   it { should respond_to(:email) }
+	it { should respond_to(:password_digest) }
 
 	it { should be_valid }
 
@@ -56,5 +57,15 @@ describe User do
         @user.should be_valid
       end      
     end
+  end
+
+	describe "when email address is already taken" do
+    before do
+      user_with_same_email = @user.dup
+			user_with_same_email.email = @user.email.upcase
+      user_with_same_email.save
+    end
+
+    it { should_not be_valid }
   end
 end
