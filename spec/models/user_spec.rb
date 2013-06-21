@@ -73,6 +73,7 @@ describe User do
       @user.save
       @user.reload.email.should == mixed_case_email.downcase
    end
+	end
 
 	describe "when email address is already taken" do
     before do
