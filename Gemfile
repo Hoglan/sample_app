@@ -8,6 +8,8 @@ gem 'bcrypt-ruby', '3.0.1'
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
 	gem 'factory_girl_rails', '4.1.0'
+	gem 'cucumber-rails', '1.2.1', :require => false
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :development do
